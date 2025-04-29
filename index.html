@@ -60,26 +60,32 @@
 
         <section class="section-hans">
             <div class="container">
-                <div class="fallingLeaves">
 
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <!-- <div class="hans-text">
-                        <h1 class="hans-quote">
-                            " The idea is to go from numbers to information to understanding "
-                        </h1>
-                        <p class="hans-author">- Hans Rosling</p>
-                    </div> -->
+                <div class="hans-area">
+
+                    <script>
+                    let hansArea = document.querySelector('.hans-area');
+                    for (let i = 0; i < 24; i++) {
+                        let hansRow = document.createElement('div');
+                        hansRow.classList.add('hans-row');
+                        for (let j = 0; j < 40; j++) {
+                            let hansBox = document.createElement('div');
+                            hansBox.classList.add('hans-box');
+                            hansRow.appendChild(hansBox);
+                        }
+                        hansArea.appendChild(hansRow);
+                    }
+                    </script>
+
+                </div>
+                <div class="hans-text">
+                    <h1 class="hans-quote">
+                        " The idea is to go from numbers to information to understanding "
+                    </h1>
+                    <p class="hans-author">- Hans Rosling</p>
                 </div>
             </div>
+
         </section>
     </body>
 

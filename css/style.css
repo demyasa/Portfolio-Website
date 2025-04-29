@@ -80,7 +80,47 @@ body {
 .section-hans {
   align-items: center;
   padding: 2.4rem 0;
-  background: linear-gradient(#d7e2fc, #86a8f7);
+  /* background: linear-gradient(#d7e2fc, #86a8f7); */
+  background-color: #fff;
+
+  /* DBL CHECK BOTTOM */
+  overflow: hidden;
+}
+
+.hans-area {
+  position: relative;
+  height: 100vh;
+}
+
+.hans-row {
+  display: inline-flex;
+  /* margin-top: -3.2rem;
+  margin-left: -5rem; */
+  margin-top: -16px;
+  margin-left: -25px;
+}
+
+.hans-row:nth-child(even) {
+  /* margin-left: 0.1rem; */
+  margin-left: 1px;
+}
+
+.hans-row .hans-box {
+  position: relative;
+  /* width: 10rem;
+  height: 11rem; */
+  width: 50px;
+  height: 55px;
+  background: #fefefe;
+  /* margin: 0.2rem; */
+  margin: 1px;
+  transition: 2s;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hans-row .hans-box:hover {
+  transition: 0s;
+  background: #356ef2;
 }
 
 .hans-text {
@@ -89,6 +129,10 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-top: 4.8rem;
+  position: absolute;
+  background-color: transparent;
+  z-index: 999;
+  margin-bottom: -5rem;
 }
 
 .hans-quote {
@@ -104,36 +148,6 @@ body {
   font-size: 3rem;
   text-indent: 60%;
   color: #204291;
-}
-
-.fallingLeaves {
-  height: 50rem;
-}
-
-.fallingLeaves span {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-  margin: -280px 40px 54px -34px;
-  /* background: url(“number-svg.svg”); */
-  background: url(“/Users/dunya/Desktop/Portfolio Site/img/test.png”);
-
-  -webkit-animation: fallingLeaves 10s infinite linear;
-  -moz-animation: fallingLeaves 10s infinite linear;
-}
-
-.fallingLeaves span:nth-child(5n + 5) {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-}
-.fallingLeaves span:nth-child(3n + 2) {
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-}
-
-.fallingLeaves span:nth-child(2n + 5) {
-  -webkit-animation-delay: 1.7s;
-  -moz-animation-delay: 1.7s;
 }
 
 /* MOVE LATER  */
