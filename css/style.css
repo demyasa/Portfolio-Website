@@ -15,6 +15,10 @@ body {
   color: #555;
 }
 
+/******************************/
+/* HERO SECTION */
+/******************************/
+
 .section-hero {
   background-color: #ebf1fe;
   padding: 4.8rem 0 9.6rem 0;
@@ -69,7 +73,81 @@ body {
   border: 3px solid #ebf1fe;
 }
 
+/******************************/
+/* HANS ROSLING SECTION */
+/******************************/
+
+.section-hans {
+  align-items: center;
+  padding: 2.4rem 0;
+  background: linear-gradient(#d7e2fc, #86a8f7);
+}
+
+.hans-text {
+  margin-top: 6.4rem;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 4.8rem;
+}
+
+.hans-quote {
+  font-size: 5.2rem;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #204291;
+  margin-bottom: 4.8rem;
+}
+
+.hans-author {
+  font-weight: 400;
+  font-size: 3rem;
+  text-indent: 60%;
+  color: #204291;
+}
+
+.fallingLeaves {
+  height: 50rem;
+}
+
+.fallingLeaves span {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: -280px 40px 54px -34px;
+  /* background: url(“number-svg.svg”); */
+  background: url(“/Users/dunya/Desktop/Portfolio Site/img/test.png”);
+
+  -webkit-animation: fallingLeaves 10s infinite linear;
+  -moz-animation: fallingLeaves 10s infinite linear;
+}
+
+.fallingLeaves span:nth-child(5n + 5) {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+}
+.fallingLeaves span:nth-child(3n + 2) {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+}
+
+.fallingLeaves span:nth-child(2n + 5) {
+  -webkit-animation-delay: 1.7s;
+  -moz-animation-delay: 1.7s;
+}
+
 /* MOVE LATER  */
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
 
 .btn:link,
 .btn:visited {
