@@ -60,24 +60,40 @@
 
         <section class="section-hans">
             <div class="container">
+                <canvas id="c"></canvas>
+                <script>
+                    let c = document.getElementById("c");
+                    let ctx = c.getContext("2d");
+                    c.height = window.innerHeight;
+                    c.width = window.innerWidth;
+                    let matrix = "0123456789";
+                    matrix = matrix.split('');
+                    let font_size = 20;
+                    let columns = c.width / font_size;
+                    let drops = [];
+                    for (let x = 0; x < columns; x++) 
+                     drops[x] = 50;
 
-                <div class="hans-area">
+                    function draw() {
+                        ctx.fillStyle = '#0F0';
+                        
+                        ctx.fillRect(0, 0, c.width, c.height);
 
-                    <script>
-                    let hansArea = document.querySelector('.hans-area');
-                    for (let i = 0; i < 24; i++) {
-                        let hansRow = document.createElement('div');
-                        hansRow.classList.add('hans-row');
-                        for (let j = 0; j < 40; j++) {
-                            let hansBox = document.createElement('div');
-                            hansBox.classList.add('hans-box');
-                            hansRow.appendChild(hansBox);
+                        ctx.fillStyle = '#F00';
+
+                        ctx.font = font_size + "px arial";
+
+                        for (let i = 0; i < drops.length; i++) {
+                            let text = matrix[Math.floor(Math.random() * matrix.length)];
+                            ctx.fillText(text, i * font_size, drops[i] * font_size);
+
+                            if(drops[i] * font_size > c.height && Math.random() > 0.975) drops[i] = 0;
+                            drops[i]++;
                         }
-                        hansArea.appendChild(hansRow);
+                        setInterval(draw, 50);
                     }
-                    </script>
+                </script>
 
-                </div>
                 <div class="hans-text">
                     <h1 class="hans-quote">
                         " The idea is to go from numbers to information to understanding "
