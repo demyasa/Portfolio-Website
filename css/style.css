@@ -78,55 +78,33 @@ body {
 /******************************/
 
 .section-hans {
-  align-items: center;
-  padding: 2.4rem 0;
-  /* background: linear-gradient(#d7e2fc, #86a8f7); */
-  background-color: #fff;
+  /* align-items: center;
+  padding: 2.4rem 0; */
+  /* background-color: white; */
+  background: white;
 
   /* DBL CHECK BOTTOM */
   overflow: hidden;
   /* position: ; */
 }
 
-/* canvas {
-  width: 100%;
-  height: 100vh;
-} */
+canvas {
+  background: white;
 
-/* HEXAGON HONEYCOMB AREA */
-
-.hans-row {
-  display: inline-flex;
-  /* margin-top: -3.2rem;
-  margin-left: -5rem; */
-  margin-top: -16px;
-  margin-left: -25px;
-}
-
-.hans-row:nth-child(even) {
-  /* margin-left: 0.1rem; */
-  margin-left: 1px;
-}
-
-.hans-row .hans-box {
+  /* Position was initially 
+  absolute but changed it to relative 
+  so that it would only be inside of 
+  the section  */
   position: relative;
-  /* width: 10rem;
-  height: 11rem; */
-  width: 50px;
-  height: 55px;
-  background: #fefefe;
-  /* margin: 0.2rem; */
-  margin: 1px;
-  transition: 2s;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+  top: 0;
+  left: 0;
 }
 
-.hans-row .hans-box:hover {
-  transition: 0s;
-  background: #356ef2;
-}
-
-/* HEXAGON HONEYCOMB AREA */
+/******************************/
+/******************************/
+/******************************/
+/******************************/
 
 .hans-text {
   margin-top: 6.4rem;

@@ -58,50 +58,19 @@
             </div>
         </section>
 
+        <!-- section-hans treat as body -->
         <section class="section-hans">
-            <div class="container">
-                <canvas id="c"></canvas>
-                <script>
-                    let c = document.getElementById("c");
-                    let ctx = c.getContext("2d");
-                    c.height = window.innerHeight;
-                    c.width = window.innerWidth;
-                    let matrix = "0123456789";
-                    matrix = matrix.split('');
-                    let font_size = 20;
-                    let columns = c.width / font_size;
-                    let drops = [];
-                    for (let x = 0; x < columns; x++) 
-                     drops[x] = 50;
+            <canvas id="canvas1"></canvas>
+            <script src="script.js"></script>
+        </section>
 
-                    function draw() {
-                        ctx.fillStyle = '#0F0';
-                        
-                        ctx.fillRect(0, 0, c.width, c.height);
-
-                        ctx.fillStyle = '#F00';
-
-                        ctx.font = font_size + "px arial";
-
-                        for (let i = 0; i < drops.length; i++) {
-                            let text = matrix[Math.floor(Math.random() * matrix.length)];
-                            ctx.fillText(text, i * font_size, drops[i] * font_size);
-
-                            if(drops[i] * font_size > c.height && Math.random() > 0.975) drops[i] = 0;
-                            drops[i]++;
-                        }
-                        setInterval(draw, 50);
-                    }
-                </script>
-
-                <div class="hans-text">
-                    <h1 class="hans-quote">
-                        " The idea is to go from numbers to information to understanding "
-                    </h1>
-                    <p class="hans-author">- Hans Rosling</p>
-                </div>
+        <section>
+            <div class="hans-text">
+                <h1 class="hans-quote">
+                    " The idea is to go from numbers to information to understanding "
+                </h1>
+                <p class="hans-author">- Hans Rosling</p>
             </div>
-
         </section>
     </body>
 
