@@ -69,7 +69,7 @@ body {
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  background-color: #ebf1fe;
+  background-color: rgb(235, 241, 254);
   border: 3px solid #ebf1fe;
 }
 
@@ -80,16 +80,17 @@ body {
 .section-hans {
   /* align-items: center;
   padding: 2.4rem 0; */
-  /* background-color: white; */
-  background: white;
+  /* background: rgb(215, 226, 252); */
+  background: rgba(235, 241, 254, 0.3);
 
   /* DBL CHECK BOTTOM */
   overflow: hidden;
-  /* position: ; */
+  position: absolute;
 }
 
 canvas {
-  background: white;
+  background: rgba(235, 241, 254, 0.3);
+  /* background: #ebf1fe; */
 
   /* Position was initially 
   absolute but changed it to relative 
@@ -102,29 +103,32 @@ canvas {
 }
 
 /******************************/
-/******************************/
-/******************************/
-/******************************/
 
 .hans-text {
-  margin-top: 6.4rem;
+  margin-top: 16.4rem;
   display: block;
   align-items: center;
   justify-content: space-between;
   padding-top: 4.8rem;
   /* postiion has to be relative */
   /* background-color: transparent; */
-  /* position: fixed; */
-  /* z-index: 999;
-  margin-bottom: -5rem; */
-}
-
-.hans-quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* z-index: 999; */
+  /* margin-bottom: 50rem; */
+  padding: 4.8rem 4.8rem;
   font-size: 5.2rem;
   font-weight: 400;
+  border-radius: 15px;
+}
+
+.hans-quote h1 {
   line-height: 1.15;
   color: #204291;
   margin-bottom: 4.8rem;
+  background-color: #ebf1fe;
+  padding: 2.4rem 4.8rem;
 }
 
 .hans-author {
@@ -134,7 +138,13 @@ canvas {
   color: #204291;
 }
 
+/******************************/
+/******************************/
+/******************************/
 /* MOVE LATER  */
+/******************************/
+/******************************/
+/******************************/
 
 .container {
   max-width: 120rem;

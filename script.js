@@ -4,15 +4,15 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 // let gradient = ctx.createRadialGradient(x1, y1, r1, x2, y2, r2);
-let gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 100, canvas.width / 2, canvas.height / 2, 800);
+// let gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 100, canvas.width / 2, canvas.height / 2, 800);
 
-// let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-gradient.addColorStop(0, 'cyan');
-gradient.addColorStop(0.2, 'blue');
-gradient.addColorStop(0.4, 'cyan');
-gradient.addColorStop(0.6, 'blue');
-gradient.addColorStop(0.8, 'cyan');
-gradient.addColorStop(1, 'blue');
+let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+gradient.addColorStop(0, '#204291');
+gradient.addColorStop(0.2, '#2a58c2');
+gradient.addColorStop(0.4, '#356ef2');
+gradient.addColorStop(0.6, '#497df3');
+gradient.addColorStop(0.8, '#729af6');
+gradient.addColorStop(1, '#9ab7f9');
 
 class Symbol {
     constructor(x, y, fontSize, canvasHeight) {
@@ -39,7 +39,7 @@ class Effect {
     constructor(canvasWidth, canvasHeight) {
         this.canvasWidth = canvasWidth;
         this.canvasHeight = canvasHeight;
-        this.fontSize = 25;
+        this.fontSize = 30;
         // number of columns depends on width of canvas and font size
         this.columns = this.canvasWidth / this.fontSize;
         this.symbols = [];
@@ -64,22 +64,25 @@ class Effect {
 const effect = new Effect(canvas.width, canvas.height);
 let lastTime = 0;
 const fps = 30;
-const nextFrame = 1000 / (fps);
+const nextFrame = (1000/ fps);
 let timer = 0;
 
 function animate(timeStamp) {
     const timeChange = timeStamp - lastTime;
     lastTime = timeStamp;
     if (timer > nextFrame) {
-        // ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.05)';
-        ctx.textAlign = 'center';
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+        // ctx.fillStyle = 'rgba(235, 241, 254, 0.15)';
+        // ctx.fillStyle = '#fff';
+        // ctx.textAlign = 'center';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         // ctx.fillStyle = 'green';
         ctx.fillStyle = gradient;
         ctx.font = effect.fontSize + 'px monospace';
         effect.symbols.forEach(sym => sym.draw(ctx));
+        timer = 0;
     } else {
+        ctx.fillStyle = '#fff';
         timer += timeChange;
     }
 
