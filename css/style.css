@@ -85,7 +85,19 @@ body {
 
   /* DBL CHECK BOTTOM */
   overflow: hidden;
-  position: absolute;
+  /* position: absolute; */
+
+  height: 100vh;
+}
+
+#labelDiv {
+  font-size: 70px;
+  position: relative;
+  top: 50rem;
+  left: 50%;
+  height: 0;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }
 
 canvas {
@@ -98,8 +110,13 @@ canvas {
   the section  */
   position: relative;
 
+  /* position: absolute; */
   top: 0;
   left: 0;
+
+  /* top: 0px;
+  left: 0px; */
+  z-index: 1;
 }
 
 /******************************/
@@ -107,29 +124,12 @@ canvas {
 /* MAKE TRANSPARENT BORDER AROUND TEXT */
 /* MAKE TEXT A BUBBLE OR OVAL */
 
-.hans-text {
-  margin-top: 16.4rem;
-  display: block;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 4.8rem;
-  /* postiion has to be relative */
-  /* background-color: transparent; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* z-index: 999; */
-  /* margin-bottom: 50rem; */
-  padding: 4.8rem 4.8rem;
-  font-size: 5.2rem;
-  font-weight: 400;
-  border-radius: 15px;
-}
-
 .hans-quote h1 {
+  position: relative;
+  margin: auto;
   line-height: 1.15;
   color: #204291;
-  margin-bottom: 4.8rem;
+  /* margin-bottom: 4.8rem; */
   background-color: #ebf1fe;
   padding: 2.4rem 4.8rem;
 }
@@ -139,6 +139,10 @@ canvas {
   font-size: 3rem;
   text-indent: 60%;
   color: #204291;
+}
+
+.section-experience {
+  padding: 6.4rem 0;
 }
 
 /******************************/
