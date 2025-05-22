@@ -98,6 +98,8 @@ body {
   height: 0;
   transform: translate(-50%, -50%);
   z-index: 3;
+
+  text-align: center;
 }
 
 canvas {
