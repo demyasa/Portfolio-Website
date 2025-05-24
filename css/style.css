@@ -87,19 +87,23 @@ body {
   overflow: hidden;
   /* position: absolute; */
 
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 #labelDiv {
   font-size: 70px;
   position: relative;
-  top: 50rem;
+  /* top: 35rem; */
+  top: 35vh;
   left: 50%;
   height: 0;
   transform: translate(-50%, -50%);
   z-index: 3;
 
   text-align: center;
+  text-transform: uppercase;
+  /* background-color: #fff; */
+  color: #204291;
 }
 
 canvas {
