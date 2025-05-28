@@ -1,3 +1,38 @@
+/*
+ --- TYPOGRAPHY
+
+    - Font sizes (px)
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    - Font weights
+    Default: 400
+    Medium: 500
+    Semi-Bold: 600
+    Bold: 700
+
+    - Line Heights
+    Default: 1
+    1.05
+
+ --- COLORS
+
+    - Primary: #356ef2
+    - Tints: #ebf1fe, #204291
+    - Shades: #3063da, #2a58c2
+    - Accents
+    - Greys: #555, #333
+
+ --- SHADOWS
+
+ --- BORDER-RADIUS
+    Default: 15px
+
+ --- WHITE-SPACE
+
+    - Spacing system (px)
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -147,8 +182,53 @@ canvas {
   color: #204291;
 }
 
+/******************************/
+/* EXPERIENCE SECTION */
+/******************************/
+
 .section-experience {
   padding: 6.4rem 0;
+}
+
+.subheading {
+  display: block;
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: #356ef2;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.job-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6.4rem;
+}
+
+/* left side content  */
+
+.jobs {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  gap: 1rem;
+}
+
+.job {
+  text-decoration: none;
+  padding: 2rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  background-color: aquamarine;
+  border: 5px solid blue;
+  text-align: center;
+}
+
+/* right side content */
+
+.job-box {
+  display: flex;
 }
 
 /******************************/
