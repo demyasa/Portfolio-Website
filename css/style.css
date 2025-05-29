@@ -241,23 +241,31 @@ canvas {
 .dates {
   font-size: 1.8rem;
   font-style: italic;
+  color: #999;
 }
 
 /* right side content */
 
 .job-box {
   /* display: flex; */
-  background-color: aquamarine;
-  border: 5px solid blue;
+  /* background-color: aquamarine; */
+  /* border: 1px solid blue; */
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 5fr;
+  grid-template-rows: 1fr 1fr 5fr;
   align-items: center;
   justify-content: center;
+  padding: 2rem 4rem 2rem 0rem;
+  border-radius: 5px;
+  background-color: #ebf1fe;
 }
 
 .job-title {
   font-size: 4.4rem;
-  font-weight: 300;
+  font-weight: 400;
+  text-align: center;
+  color: #356ef2;
+  color: #204291;
+  letter-spacing: 1px;
 }
 
 .job-company {
@@ -266,7 +274,9 @@ canvas {
 
 .job-stack {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
+  text-align: center;
+  color: #888;
 }
 
 .job-bullets {
@@ -276,6 +286,34 @@ canvas {
   gap: 2.4rem;
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+.job-bullet {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  /* gap: 2rem; */
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.bullet-point {
+  justify-self: center;
+  align-self: center;
+  height: 10px;
+  width: 10px;
+  background-color: #204291;
+  border-radius: 50%;
+}
+
+.job-word {
+  color: #356ef2;
+
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.job-active {
+  background: linear-gradient(45deg, #ebf1fe, #ebf1fe);
 }
 
 /******************************/
