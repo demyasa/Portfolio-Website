@@ -212,6 +212,7 @@ canvas {
   flex-direction: column;
   list-style: none;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 .job {
@@ -251,12 +252,18 @@ canvas {
   /* background-color: aquamarine; */
   /* border: 1px solid blue; */
   display: grid;
-  grid-template-rows: 1fr 1fr 5fr;
+  grid-template-rows: 1fr 2fr;
   align-items: center;
   justify-content: center;
-  padding: 2rem 4rem 2rem 0rem;
   border-radius: 5px;
   background-color: #ebf1fe;
+}
+
+.job-header {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #999;
 }
 
 .job-title {
@@ -277,6 +284,13 @@ canvas {
   font-weight: 400;
   text-align: center;
   color: #888;
+  font-style: italic;
+  margin-top: 2rem;
+  /* text-decoration: underline;
+  text-underline-offset: 2rem;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #204291;
+  margin-bottom: 3rem; */
 }
 
 .job-bullets {
@@ -286,6 +300,7 @@ canvas {
   gap: 2.4rem;
   font-size: 1.6rem;
   line-height: 1.5;
+  padding: 2rem 4rem 2rem 0rem;
 }
 
 .job-bullet {
