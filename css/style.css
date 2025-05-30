@@ -18,7 +18,7 @@
 
     - Primary: #356ef2
     - Tints: #ebf1fe, #204291
-    - Shades: #3063da, #2a58c2
+    - Shades: #3063da, #2a58c2, #c2d4fb
     - Accents
     - Greys: #555, #333
 
@@ -199,6 +199,16 @@ canvas {
   margin-bottom: 6.4rem;
 }
 
+.subheading-center {
+  display: block;
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: #356ef2;
+  text-transform: uppercase;
+  margin-bottom: 6.4rem;
+  text-align: center;
+}
+
 .job-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -257,6 +267,9 @@ canvas {
   justify-content: center;
   border-radius: 5px;
   background-color: #ebf1fe;
+  /* background-color: #fff; */
+  /* box-shadow: 3px 3px #204291, -1em 0 0.4em #356ef2; */
+  /* box-shadow: 1px 3px 10px #204291; */
 }
 
 .job-header {
@@ -329,6 +342,117 @@ canvas {
 
 .job-active {
   background: linear-gradient(45deg, #ebf1fe, #ebf1fe);
+}
+
+/******************************/
+/* PROJECT SECTION */
+/******************************/
+
+.section-project {
+  padding: 6.4rem 0;
+}
+
+.carousel {
+  width: 80rem;
+  margin: 10rem auto;
+  background-color: #356ef2;
+  border-radius: 5px;
+
+  padding: 3.2rem 4.8rem 3.2rem 8.6rem;
+  /* padding: 3.2rem;
+  padding-left: 8.6rem;
+  padding-right: 4.8rem; */
+
+  display: flex;
+  align-items: center;
+  gap: 8.6rem;
+
+  position: relative;
+}
+
+.project-img {
+  height: 20rem;
+  border-radius: 5px;
+  transform: scale(1.5);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.25);
+}
+
+.project-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+  color: #ebf1fe;
+}
+.project-title {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+  color: #c2d4fb;
+}
+.project-stack {
+  font-size: 1.2rem;
+  color: #c2d4fb;
+}
+
+/* CONTROLS */
+
+.btn-project {
+  background-color: #fff;
+  border: none;
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  border-radius: 50%;
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--left {
+  /* In relation to PARENT element */
+  left: 0;
+  top: 50%;
+  /* In relation to element ITSELF */
+  transform: translate(-50%, -50%);
+}
+
+.btn--right {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.btn-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  /* stroke: #356ef2; */
+  color: #356ef2;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 6.4rem);
+
+  display: flex;
+  gap: 1.2rem;
+}
+
+.dot {
+  height: 1.2rem;
+  width: 1.2rem;
+  background-color: #fff;
+  border: 2px solid #356ef2;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot--fill {
+  background-color: #356ef2;
 }
 
 /******************************/
