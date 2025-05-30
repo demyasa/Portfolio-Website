@@ -126,7 +126,7 @@ body {
 }
 
 #labelDiv {
-  font-size: 70px;
+  font-size: 5.2rem;
   position: relative;
   /* top: 35rem; */
   top: 35vh;
@@ -358,10 +358,10 @@ canvas {
   background-color: #356ef2;
   border-radius: 5px;
 
-  padding: 3.2rem 4.8rem 3.2rem 8.6rem;
-  /* padding: 3.2rem;
+  /* padding: 3.2rem 4.8rem 3.2rem 8.6rem; */
+  /* /* padding: 3.2rem; */
   padding-left: 8.6rem;
-  padding-right: 4.8rem; */
+  padding-right: 4.8rem;
 
   display: flex;
   align-items: center;
@@ -377,11 +377,41 @@ canvas {
   box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.25);
 }
 
+.carousel-2 {
+  width: 80rem;
+  margin: 10rem auto;
+  background-color: #356ef2;
+  border-radius: 5px;
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* gap: 4.8rem; */
+}
+
+.project-img-2 {
+  max-width: 100%;
+  height: auto;
+  min-height: 30rem;
+  object-fit: cover;
+
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.project-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem;
+}
+
 .project-text {
   font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.5;
-  margin-bottom: 3.2rem;
+  /* margin-bottom: 3.2rem; */
   color: #ebf1fe;
 }
 .project-title {
@@ -394,6 +424,24 @@ canvas {
   color: #c2d4fb;
 }
 
+.project-title-2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  /* margin-bottom: 2rem; */
+  color: #ebf1fe;
+}
+
+.project-stack-2 {
+  font-size: 1.4rem;
+  color: #c2d4fb;
+  line-height: 1.2;
+}
+
+.project-text-2 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #ebf1fe;
+}
 /* CONTROLS */
 
 .btn-project {
