@@ -402,7 +402,7 @@ canvas {
 .project-img-2 {
   max-width: 100%;
   height: auto;
-  min-height: 30rem;
+  min-height: 35rem;
   object-fit: cover;
 
   border-top-left-radius: 5px;
