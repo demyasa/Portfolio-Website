@@ -253,6 +253,9 @@ canvas {
 .job:hover,
 .job:active {
   background: linear-gradient(45deg, #ebf1fe, #ebf1fe);
+  transform: scale(1.05);
+
+  transition: all 0.4s;
 }
 
 .company {
@@ -511,6 +514,61 @@ canvas {
 
 .dot--fill {
   background-color: #356ef2;
+}
+
+/******************************/
+/* FOOTER SECTION */
+/******************************/
+
+.section-footer {
+  padding: 6.4rem 0;
+  /* height: 46rem; */
+  background-color: #356ef2;
+}
+
+.footer-heading {
+  display: block;
+  font-weight: 500;
+  font-size: 3.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 3.6rem;
+  text-align: center;
+}
+
+.footer-heading:after {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 3.6rem;
+}
+
+.contact-links {
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  display: flex;
+  gap: 3.6rem;
+}
+
+.contact-icon {
+  height: 7rem;
+  width: 7rem;
+  color: #fff;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.contact-icon:hover,
+.contact-icon:active {
+  color: #204291;
+  /* transform: scale(1.1); */
+  transition: all 0.4s;
 }
 
 /******************************/
