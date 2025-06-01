@@ -268,7 +268,8 @@ canvas {
 .job:hover,
 .job:active {
   /* For the background color hover transition */
-  background: linear-gradient(135deg, var(--myColor2), var(--myColor2));
+  /* background: linear-gradient(135deg, var(--myColor2), var(--myColor2)); */
+  background: #ebf1fe;
   --myColor1: #ebf1fe;
   --myColor2: #ebf1fe;
 
