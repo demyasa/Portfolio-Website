@@ -293,7 +293,7 @@ canvas {
   /* display: flex; */
   /* background-color: aquamarine; */
   /* border: 1px solid blue; */
-  display: grid;
+  display: none;
   grid-template-rows: 1fr 2fr;
   align-items: center;
   justify-content: center;
@@ -302,6 +302,10 @@ canvas {
   /* background-color: #fff; */
   /* box-shadow: 3px 3px #204291, -1em 0 0.4em #356ef2; */
   /* box-shadow: 1px 3px 10px #204291; */
+}
+
+.job-box--active {
+  display: grid;
 }
 
 .job-header {
