@@ -44,7 +44,7 @@ class Effect {
         this.columns = this.canvasWidth / this.fontSize;
         this.symbols = [];
         this.#initialize();
-        console.log(this.symbols);
+        // console.log(this.symbols);
     }
     #initialize() { // the hashtag makes the method private (ABSTRACTION)
         for (let i = 0; i < this.columns; i++) {
