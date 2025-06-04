@@ -425,14 +425,14 @@ canvas {
 
 .btn--left {
   /* In relation to PARENT element */
-  left: 0;
+  left: 4rem;
   top: 50%;
   /* In relation to element ITSELF */
   transform: translate(-50%, -50%);
 }
 
 .btn--right {
-  right: 0;
+  right: 4rem;
   top: 50%;
   transform: translate(50%, -50%);
 }
@@ -485,7 +485,7 @@ canvas {
 
   border: 5px solid #3063da;
   /* IN THE END */
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .slide {
