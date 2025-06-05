@@ -447,14 +447,15 @@ canvas {
 .dots {
   position: absolute;
   left: 50%;
-  bottom: 0;
+  bottom: 15%;
   transform: translate(-50%, 6.4rem);
+  /* transform: translate(-50%, 0); */
 
   display: flex;
-  gap: 1.2rem;
+  gap: 1.4rem;
 }
 
-.dot {
+.dots_dot {
   height: 1.2rem;
   width: 1.2rem;
   background-color: #fff;
