@@ -26,8 +26,6 @@ const highlightDot = function(slide) {
 
 // Function to shift slides
 const goToSlide = function(slide) {
-    console.log('Going to slide: ', slide);
-    console.log('Type of slide: ', typeof(slide));
     slides.forEach( 
         (s , i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
     );
@@ -73,10 +71,8 @@ document.addEventListener('keydown', function(e) {
 });
 
 dotContainer.addEventListener('click', function(e) {
-    console.log(e.target.classList);
     if (e.target.classList.contains('dots_dot')) {
         curSlide = +e.target.dataset.slide;
-        console.log("Ayo", curSlide);
         goToSlide(curSlide);
         highlightDot(curSlide)
     }

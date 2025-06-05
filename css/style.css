@@ -113,23 +113,19 @@ body {
 /******************************/
 
 .section-hans {
-  /* align-items: center;
-  padding: 2.4rem 0; */
   /* background: rgb(215, 226, 252); */
   background: rgba(235, 241, 254, 0.3);
 
   /* DBL CHECK BOTTOM */
   overflow: hidden;
   /* position: absolute; */
-
-  /* height: 100vh; */
 }
 
 #labelDiv {
-  font-size: 5.2rem;
+  font-size: 4.4rem;
   position: relative;
   /* top: 35rem; */
-  top: 35vh;
+  top: 15vh;
   left: 50%;
   height: 0;
   transform: translate(-50%, -50%);

@@ -1,10 +1,7 @@
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-// let gradient = ctx.createRadialGradient(x1, y1, r1, x2, y2, r2);
-// let gradient = ctx.createRadialGradient(canvas.width / 2, canvas.height / 2, 100, canvas.width / 2, canvas.height / 2, 800);
+canvas.height = window.innerHeight/2; // Adjust this properly
 
 let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
 gradient.addColorStop(0, '#204291');
