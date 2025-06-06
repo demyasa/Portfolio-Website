@@ -10,7 +10,7 @@ gradient.addColorStop(0.4, '#356ef2');
 gradient.addColorStop(0.6, '#497df3');
 gradient.addColorStop(0.8, '#729af6');
 gradient.addColorStop(1, '#9ab7f9');
-
+// 4004033980
 class Symbol {
     constructor(x, y, fontSize, canvasHeight) {
         // this.characters = '0123456789DENNIS';
