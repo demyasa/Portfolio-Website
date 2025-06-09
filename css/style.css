@@ -575,7 +575,9 @@ canvas {
   border-radius: 15px;
   text-decoration: none;
   color: #fff;
-  align-self: center;
+  /* align-self: center; */
+  align-self: start;
+  margin-left: 11%;
   text-transform: uppercase;
   background-color: #204291;
 
