@@ -1,7 +1,8 @@
 const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
-canvas.height = window.innerHeight/2; // Adjust this properly
+canvas.height = window.innerHeight; // Adjust this properly
+// canvas.style.height = '100vh'; // Adjust this properly
 
 let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
 gradient.addColorStop(0, '#204291');
@@ -89,6 +90,7 @@ animate(0);
 
 window.addEventListener('resize', function() {
     canvas.width = window.innerWidth;
+    // canvas.style.height = '100vh';
     canvas.height = window.innerHeight;
     effect.resize(canvas.width, canvas.height);
 })
