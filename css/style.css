@@ -51,6 +51,25 @@ body {
 }
 
 /******************************/
+/* HEADER SECTION */
+/******************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebf1fe;
+
+  /* For sticky header later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 6.4rem;
+}
+
+/******************************/
 /* HERO SECTION */
 /******************************/
 
@@ -63,6 +82,7 @@ body {
 .hero {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
   display: grid;
   gap: 9.6rem;
   grid-template-columns: 1fr 1fr;
@@ -85,6 +105,8 @@ body {
 }
 
 .hero-img {
+  /* height: 50rem;
+  width: auto; */
   width: 100%;
   border-radius: 15px;
 }
@@ -147,7 +169,7 @@ body {
   width: 80%;
   margin-left: 10%;
   border-radius: 25px;
-  border: 5px solid #356ef5;
+  border: 5px solid #356ef2;
 }
 
 canvas {
