@@ -34,3 +34,32 @@ const headerDiv = document.querySelector('.header');
 btnNav.addEventListener('click', function() {
     headerDiv.classList.toggle('nav-open')
 })
+
+// Smooth Scrolling Animation
+const allLinks = document.querySelectorAll('a:link');
+
+allLinks.forEach(function(link) {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const href = link.getAttribute('href');
+
+        // Scroll to the top
+        if (href === "#") window.scrollTo( {
+            top: 0,
+            behavior: 'smooth'
+        })
+
+        // Scroll to different sections
+        if (href !== "#" && href.startsWith("#")) {
+            let sectionDiv = document.querySelector(href);
+            sectionDiv.scrollIntoView({behavior: "smooth"});
+        }
+
+        // Close mobile nav
+        if (link.classList.contains('main-nav-link')) {
+            headerDiv.classList.toggle('nav-open')
+        }
+
+    })
+})
