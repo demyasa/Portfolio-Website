@@ -25,3 +25,12 @@ jobsContainer.addEventListener('click', (e) => {
     // Load content
     document.querySelector(`.job-box-${clicked.dataset.job}`).classList.add('job-box--active');
 })
+
+// Mobile Navigation Actions
+
+const btnNav = document.querySelector('.btn-mobile-nav');
+const headerDiv = document.querySelector('.header');
+
+btnNav.addEventListener('click', function() {
+    headerDiv.classList.toggle('nav-open')
+})

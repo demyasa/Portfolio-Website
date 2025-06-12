@@ -159,6 +159,7 @@
   /* MOBILE NAVIGATION */
   .btn-mobile-nav {
     display: block;
+    z-index: 1000;
   }
 
   .main-nav {
@@ -402,6 +403,10 @@
   .hans-author {
     font-size: 1.5rem;
     margin-top: -5%;
+  }
+
+  #labelDiv {
+    top: 17vh;
   }
 
   .slider {
