@@ -211,6 +211,148 @@
     font-size: 3.6rem;
     font-weight: 500;
   }
+
+  .job-grid {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .card {
+    grid-template-columns: 1fr 3fr;
+  }
+
+  .project-img {
+    max-height: 45rem;
+  }
+
+  .project-link {
+    margin-left: 20%;
+  }
+}
+
+/*********************************/
+/* BELOW 704PX (Smaller Tablets) */
+/*********************************/
+
+@media (max-width: 44em) {
+  .dots {
+    bottom: 13%;
+  }
+
+  .project-link {
+    margin-left: 17%;
+  }
+}
+
+/*********************************/
+/* BELOW 680PX (Landscape Phones) */
+/*********************************/
+
+@media (max-width: 43em) {
+  .hans-text {
+    font-size: 3.6rem;
+  }
+
+  .hans-author {
+    margin-top: -4%;
+    font-size: medium;
+    width: 30%;
+    margin-left: 50%;
+  }
+
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .job-bullets {
+    padding: 2rem 4rem 2rem 0rem;
+  }
+  .jobs {
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+  }
+
+  .job {
+    padding: 1rem;
+  }
+
+  .company {
+    font-size: 2.6rem;
+    text-align: center;
+  }
+
+  .dates {
+    font-size: 1.4rem;
+  }
+
+  .job-title {
+    padding-top: 2rem;
+  }
+
+  .dots {
+    bottom: 13%;
+  }
+}
+
+/*********************************/
+/* BELOW 600PX (Big Phones) */
+/*********************************/
+
+@media (max-width: 38rem) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+  }
+
+  .project {
+    padding: 2rem 3rem 2rem 3rem;
+    gap: 1.6rem;
+    text-align: center;
+  }
+
+  .project-img {
+    /* height: 15rem; */
+    height: 30%;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+  }
+
+  .project {
+    height: 70%;
+  }
+
+  .project-text {
+    font-size: 1.6rem;
+    text-align: start;
+    text-indent: 2rem;
+  }
+
+  .project-link {
+    align-self: center;
+    margin-left: 0;
+  }
+
+  .section-footer {
+    padding: 3.6em 0;
+  }
+
+  .footer-heading {
+    font-size: 2.4rem;
+  }
+
+  .footer-heading {
+    margin-bottom: 2rem;
+  }
+
+  .footer-heading:after {
+    margin-top: 2rem;
+  }
+
+  .contact-icon {
+    height: 5rem;
+    width: 5rem;
+  }
 }
 
 /* 
