@@ -10,7 +10,10 @@
   }
 }
 
+/*********************************/
 /* BELOW 1260PX (Small desktops) */
+/*********************************/
+
 @media (max-width: 79em) {
   .hero {
     max-width: 110em;
@@ -24,6 +27,7 @@
 /*********************************/
 /* BELOW 1171PX (Small desktops) */
 /*********************************/
+
 @media (max-width: 73.2em) {
   html {
     /* 9px / 16px = 56.25% */
@@ -64,15 +68,95 @@
   }
 }
 
-/*********************************/
+/************************************/
 /* BELOW 1040PX (Landscape Tablets) */
-/*********************************/
+/************************************/
 
 @media (max-width: 65em) {
   .hans-author {
     margin-top: -2.5%;
+    font-size: medium;
+    width: 20%;
+  }
+
+  .job-header {
+    padding: 0 0 2rem 0;
+  }
+
+  .job-stack {
+    margin-top: 1rem;
+  }
+
+  .job-bullets {
+    padding: 0 4rem 2rem 0rem;
   }
 }
+
+/*************************/
+/* BELOW 960PX (Tablets) */
+/*************************/
+
+@media (max-width: 60em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 50%;
+  }
+
+  .dates {
+    font-size: 1.6rem;
+  }
+
+  .job-box {
+    grid-template-rows: 1fr 3fr;
+  }
+
+  .bullet-point {
+    height: 7px;
+    width: 7px;
+  }
+}
+
+/*********************************/
+/* BELOW 784PX (Smaller Tablets) */
+/*********************************/
+
+@media (max-width: 49em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8.6rem;
+  }
+
+  .hero-description {
+    margin-bottom: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+    border-radius: 15px;
+  }
+
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .project {
+    padding: 3rem;
+  }
+}
+
 /* 
     FONT SIZES (px)
     ***************
