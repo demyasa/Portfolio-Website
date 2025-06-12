@@ -298,7 +298,19 @@
 /* BELOW 600PX (Big Phones) */
 /*********************************/
 
-@media (max-width: 38rem) {
+@media (max-width: 38em) {
+  .hans-text {
+    font-size: 3rem;
+  }
+
+  .slider {
+    height: 65rem;
+  }
+
+  .slide {
+    height: 60rem;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
@@ -322,10 +334,17 @@
     height: 70%;
   }
 
+  .project-title {
+    font-size: 3rem;
+  }
+
   .project-text {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: start;
     text-indent: 2rem;
+  }
+  .project-stack {
+    font-size: 1.6rem;
   }
 
   .project-link {
@@ -352,6 +371,81 @@
   .contact-icon {
     height: 5rem;
     width: 5rem;
+  }
+}
+
+/*********************************/
+/* BELOW 528PX (Medium Phones) */
+/*********************************/
+
+@media (max-width: 33em) {
+  .header {
+    padding: 0 2.4rem;
+  }
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 3.2rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .hans-text {
+    font-size: 2.4rem;
+    padding: 3rem 2rem;
+  }
+
+  .hans-author {
+    font-size: 1.5rem;
+    margin-top: -5%;
+  }
+
+  .slider {
+    height: 75rem;
+  }
+
+  .slide {
+    height: 70rem;
+  }
+
+  .jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*********************************/
+/* BELOW 416PX (Medium Phones) */
+/*********************************/
+
+@media (max-width: 26em) {
+  .hero-description {
+    font-size: 1.8rem;
+  }
+
+  .skills-imgs img {
+    height: 4rem;
+    width: 4rem;
+  }
+  .slider {
+    height: 80rem;
+  }
+
+  .slide {
+    height: 75rem;
+  }
+
+  .project-title {
+    font-size: 2.4rem;
+  }
+
+  .project-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
   }
 }
 
