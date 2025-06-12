@@ -63,3 +63,44 @@ allLinks.forEach(function(link) {
 
     })
 })
+
+// Sticky Header Navigation Bar
+
+const sectionHeroDiv = document.querySelector('.section-hero');
+
+const obs = new IntersectionObserver( function(entries) {
+    const entry = entries[0]
+    if (!entry.isIntersecting) {
+        document.body.classList.add("sticky");
+    }
+    if (entry.isIntersecting) {
+        document.body.classList.remove("sticky");
+    }
+}, {
+    // For Viewport
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px'
+})
+
+obs.observe(sectionHeroDiv);
+
+// Fix flexbox gap for Safari Browsers
+
+function checkFlexGap() {
+    let flex = document.createElement("div");
+    flex.style.display = "flex";
+    flex.style.flexDirection = "column";
+    flex.style.rowGap = "1px";
+
+    flex.appendChild(document.createElement('div'));
+    flex.appendChild(document.createElement('div'));
+
+    document.body.appendChild(flex);
+    let isSupported = flex.scrollHeight === 1;
+    flex.parentNode.removeChild(flex);
+    console.log(isSupported);
+
+    if (!isSupported) document.body.classList.add("no-flexbox-gap");
+}
+checkFlexGap();
