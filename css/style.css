@@ -68,6 +68,7 @@ body {
 
 .logo {
   height: 6.4rem;
+  border-radius: 15px;
 }
 
 /******************************/
@@ -78,7 +79,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 3.2rem;
+  gap: 4.8rem;
 }
 
 .main-nav-link:link,
@@ -189,8 +190,6 @@ body {
 
 #labelDiv {
   position: relative;
-  /* top: 35rem; */
-  /* top: 15vh; */
   top: 14vh;
   left: 50%;
   height: 0;
@@ -283,6 +282,22 @@ canvas {
   color: #356ef2;
   text-transform: uppercase;
   margin-bottom: 6.4rem;
+  position: relative;
+}
+
+.subheading::after {
+  content: " ";
+  width: 150%;
+  height: 0.5rem;
+  position: absolute;
+  /* background-color: var(--c-title-underline-color); */
+  background: linear-gradient(135deg, #204291, #ebf1fe);
+
+  position: absolute;
+  border-radius: 15px;
+  top: -6.5rem;
+  right: 25%;
+  z-index: 6;
 }
 
 .subheading-center {
@@ -292,6 +307,22 @@ canvas {
   color: #356ef2;
   text-transform: uppercase;
   text-align: center;
+  /* position: relative; */
+}
+
+.subheading-center::after {
+  content: " ";
+  width: 70%;
+  height: 0.5rem;
+  position: absolute;
+  /* background-color: var(--c-title-underline-color); */
+  background: linear-gradient(135deg, #ebf1fe, #204291);
+
+  /* position: absolute; */
+  border-radius: 15px;
+  top: 0rem;
+  left: 30%;
+  z-index: 6;
 }
 
 .job-grid {

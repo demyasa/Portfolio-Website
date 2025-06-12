@@ -1,0 +1,88 @@
+/*********************************/
+
+/*********************************/
+/* BELOW 1344PX (Small desktops) */
+/*********************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120em;
+  }
+}
+
+/* BELOW 1260PX (Small desktops) */
+@media (max-width: 79em) {
+  .hero {
+    max-width: 110em;
+  }
+
+  .job-grid {
+    gap: 4.8rem;
+  }
+}
+
+/*********************************/
+/* BELOW 1171PX (Small desktops) */
+/*********************************/
+@media (max-width: 73.2em) {
+  html {
+    /* 9px / 16px = 56.25% */
+    font-size: 56.25%;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .hero {
+    max-width: 100em;
+    gap: 6.4rem;
+  }
+
+  .hans-author {
+    margin-top: -2%;
+  }
+
+  .job-grid {
+    gap: 3.2rem;
+  }
+
+  .jobs {
+    gap: 3rem;
+  }
+
+  .job-header {
+    padding: 2rem 0;
+  }
+
+  .job-title {
+    font-size: 3.6rem;
+  }
+
+  .job-bullets {
+    gap: 1.6rem;
+  }
+}
+
+/*********************************/
+/* BELOW 1040PX (Landscape Tablets) */
+/*********************************/
+
+@media (max-width: 65em) {
+  .hans-author {
+    margin-top: -2.5%;
+  }
+}
+/* 
+    FONT SIZES (px)
+    ***************
+    
+    10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+    SPACING SYSTEM (px)
+    *******************
+    
+    2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+/*********************************/
