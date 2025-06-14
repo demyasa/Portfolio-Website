@@ -104,3 +104,10 @@ function checkFlexGap() {
     if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+// Script to open Resume in newTab
+
+function openInNewTab(url) {
+    var win = window.open(url, '_blank');
+    win.focus();
+  }

@@ -535,7 +535,7 @@ canvas {
   color: #356ef2;
 
   font-weight: 600;
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 .job-active {
